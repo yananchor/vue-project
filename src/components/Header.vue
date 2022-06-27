@@ -25,9 +25,7 @@
     </el-dropdown>
     <el-dropdown>
       <div class="el-dropdown-link">
-        <el-icon>
-          <Film />
-        </el-icon>
+        <i class="iconfont translate"></i>
       </div>
       <template #dropdown>
         <el-dropdown-menu>
