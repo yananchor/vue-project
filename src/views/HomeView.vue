@@ -8,7 +8,7 @@
         <el-aside width="200px">Aside</el-aside>
         <el-main>
           <h1 class="text-3xl font-bold underline">
-            Hello world!
+             <p>{{ $t('home') }}</p>
           </h1>
         </el-main>
       </el-container>
@@ -19,7 +19,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Header from '@/components/Header.vue'; // @ is an alias to /src
-
 export default defineComponent({
   name: 'HomeView',
   components: {

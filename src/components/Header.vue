@@ -30,8 +30,8 @@
       </div>
       <template #dropdown>
         <el-dropdown-menu>
-          <el-dropdown-item>简体中文</el-dropdown-item>
-          <el-dropdown-item>English</el-dropdown-item>
+          <el-dropdown-item @click.native="toggleLang('zh')">简体中文</el-dropdown-item>
+          <el-dropdown-item @click.native="toggleLang('en')">English</el-dropdown-item>
         </el-dropdown-menu>
       </template>
     </el-dropdown>
@@ -43,12 +43,34 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'Header',
+  setup() {
+
+  },
   data() {
     return {
       userName: 'Emily'
     }
+  },
+  methods: {
+    toggleLang(lang: string) {
+      if (lang == 'zh') {
+        localStorage.setItem('locale', 'zh')
+        this.$i18n.locale = localStorage.getItem('locale') || 'zh-CN'
+        this.$message({
+          message: '切换为中文！',
+          type: 'success'
+        })
+      } else if (lang == 'en') {
+        localStorage.setItem('locale', 'en')
+        this.$i18n.locale = localStorage.getItem('locale') || 'en-US';
+        this.$message({
+          message: 'Switch to English!',
+          type: 'success'
+        })
+      }
+    }
   }
-});
+})
 </script>
 
 <style scoped>
