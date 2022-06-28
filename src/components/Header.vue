@@ -7,6 +7,7 @@
     <el-icon>
       <Search />
     </el-icon>
+    <i class="iconfont icon-question-circle"></i>
     <el-icon>
       <Bell />
     </el-icon>
@@ -25,7 +26,7 @@
     </el-dropdown>
     <el-dropdown>
       <div class="el-dropdown-link">
-        <i class="iconfont translate"></i>
+        <i class="iconfont icon-translate"></i>
       </div>
       <template #dropdown>
         <el-dropdown-menu>
