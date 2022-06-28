@@ -6,7 +6,11 @@
       </el-header>
       <el-container class="main-container">
         <el-aside width="200px">Aside</el-aside>
-        <el-main>Main</el-main>
+        <el-main>
+          <h1 class="text-3xl font-bold underline">
+            Hello world!
+          </h1>
+        </el-main>
       </el-container>
     </el-container>
   </div>
