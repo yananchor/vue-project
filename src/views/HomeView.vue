@@ -7,7 +7,7 @@
       <el-container class="main-container">
         <el-aside width="200px">Aside</el-aside>
         <el-main>
-          <h1 class="text-3xl font-bold underline">
+          <h1 class="text-3xl font-bold">
              <p>{{ $t('home') }}</p>
           </h1>
         </el-main>

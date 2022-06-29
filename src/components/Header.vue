@@ -54,14 +54,14 @@ export default defineComponent({
   methods: {
     toggleLang(lang: string) {
       if (lang == 'zh') {
-        localStorage.setItem('locale', 'zh')
+        localStorage.setItem('locale', 'zh-CN')
         this.$i18n.locale = localStorage.getItem('locale') || 'zh-CN'
         this.$message({
           message: '切换为中文！',
           type: 'success'
         })
       } else if (lang == 'en') {
-        localStorage.setItem('locale', 'en')
+        localStorage.setItem('locale', 'en-US')
         this.$i18n.locale = localStorage.getItem('locale') || 'en-US';
         this.$message({
           message: 'Switch to English!',
